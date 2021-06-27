@@ -1,6 +1,9 @@
 /**
  * A package for generating random user name(completely random user name or random user name based on your fullname) and a random password generator
- * @param string username: fullname of user
+ * @param string firstname: firstname of user
+ * @param string middlename: middlename of user
+ * @param string lastname: users last name
+ * if all 3 params are ignored, a totally random username is returned
  */
 
 const numberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -70,4 +73,3 @@ function randomUsernameGenerator(
   return possibleNames;
 }
 
-console.log(randomUsernameGenerator('chukwunonso', 'louis', 'nwosu'))
